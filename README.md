@@ -10,6 +10,17 @@ It helps any person to have all the CRUD operations.
 
 # Some Images of the Application
 
+### All Users
+![All Users](https://i.ibb.co/yQsQp4p/ss1.png)
+
+
+### Add User
+![Add User](https://i.ibb.co/QbZXjd8/ss2.png)
+
+
+### Edit User
+![Edit User](https://i.ibb.co/xhhPQxj/ss3.png)
+
 
 ## Contributions to this repo are WELCOME ⚡️🙌🏻
 - :art: give suggestions on how to improve the UI design
