@@ -37,8 +37,9 @@ It helps any person to have all the CRUD operations.
 ## Tools, Languages & Frameworks used
 * Node JS/Express JS (Backend Framework)
 * Mongo DB (Database)
-* CSS
-* Javascript
+* CSS (Styling Application)
+* Javascript (Main Language Used)
 * React JS (Frontend Framework)
-* Material UI
+* Material UI (React JS Framework)
+* VS Code (Text Editor)
 
