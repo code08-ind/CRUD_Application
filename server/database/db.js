@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 
+// setting up connection with a url from mongo db and applying try and catch
 const Connection = async (username, password) => {
     const URL = `mongodb://${username}:${password}@ac-gmnftjq-shard-00-00.qdegf1y.mongodb.net:27017,ac-gmnftjq-shard-00-01.qdegf1y.mongodb.net:27017,ac-gmnftjq-shard-00-02.qdegf1y.mongodb.net:27017/CRUD_APPLICATION?ssl=true&replicaSet=atlas-xxete9-shard-0&authSource=admin&retryWrites=true&w=majority`;
     try {
