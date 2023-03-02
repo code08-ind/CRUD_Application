@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+// api is taken from backend
 const URL = "http://localhost:8000";
 
+// user is added, the api is called
 export const addUser = async (data) => {
     try {
         return await axios.post(`${URL}/add`, data);
@@ -10,6 +12,7 @@ export const addUser = async (data) => {
     }
 }
 
+// all the users are obtained up
 export const getUsers = async () => {
     try {
         return await axios.get(`${URL}/all/`);
@@ -18,6 +21,7 @@ export const getUsers = async () => {
     }
 }
 
+// a particular user is obtained from a id
 export const getUser = async (id) => {
     try {
         return await axios.get(`${URL}/${id}`);
@@ -26,6 +30,7 @@ export const getUser = async (id) => {
     }
 }
 
+// edit a user with a particular id
 export const editUser = async (user, id) => {
     try {
         return await axios.put(`${URL}/${id}`, user);
@@ -34,6 +39,7 @@ export const editUser = async (user, id) => {
     }
 }
 
+// delete a user with a particular id
 export const deleteUser = async (id) => {
     try {
         return await axios.delete(`${URL}/${id}`);
