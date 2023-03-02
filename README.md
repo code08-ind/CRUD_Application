@@ -1,10 +1,18 @@
 # CRUD_Application
-A CRUD Application Made with the help of MERN stack with all CRUD operations.
+A CRUD Application Made with the help of MERN stack with all CRUD operations. The project supports on every platform with windows, mac and linux.
 
+## How to work with application:
+* Just clone the application.
+* Install all the packages by going in client and server folder by running:
+``` 
+npm install 
+```
+* Client refers to the frontend part of the application and server refers to backend of the application
 * People can add the information.
 * They can edit any information
 * They can delete any information by just clicking a button
 * Anyone can post anything and read any information.
+* Do check in the comments mentioned in every folder and file added.
 
 It helps any person to have all the CRUD operations.
 
