@@ -2,6 +2,7 @@
 import { request, response } from 'express';
 import User from '../schema/user-schema.js';
 
+// add a new user
 export const addUser = async (request, response) => {
     const user = request.body;
 
@@ -15,6 +16,7 @@ export const addUser = async (request, response) => {
     }
 }
 
+// get all the users
 export const getUsers = async (request, response) => {
     try {
         const users = await User.find({});
@@ -24,6 +26,7 @@ export const getUsers = async (request, response) => {
     }
 }
 
+// get a user with a particular id
 export const getUser = async (request, response) => {
     try {
         const user = await User.find({ _id: request.params.id });
@@ -33,6 +36,7 @@ export const getUser = async (request, response) => {
     }
 }
 
+// edit user with a particular id
 export const editUser = async (request, response) => {
     let user = request.body;
     let editUser = new User(user);
@@ -44,6 +48,7 @@ export const editUser = async (request, response) => {
     }
 }
 
+// delete a user with particular id
 export const deleteUser = async (request, response) => {
     try {
         await User.deleteOne({ _id: request.params.id });
