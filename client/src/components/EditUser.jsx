@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { FormControl, FormGroup, Input, InputLabel, styled, Button } from '@mui/material';
 import { useNavigate, useParams } from 'react-router-dom';
 
+// for styling
 const Container = styled(FormGroup)`
   width:50%;
   margin:5% auto 0 auto;
@@ -27,15 +28,18 @@ const EditUser = () => {
         loadUserDetails();
     }, []);
 
+//   load the pre edition details of a user
     const loadUserDetails = async () => {
         const response = await getUser(id);
         setUser(response.data[0]);
     }
 
+//     when a value is changed up in an input box
     const onValueChange = (e) => {
         setUser({ ...user, [e.target.name]: e.target.value });
     }
 
+//     user details are edited up
     const editUserDetails = async () => {
         await editUser(user, id);
         navigate("/all");
