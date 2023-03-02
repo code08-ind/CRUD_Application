@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FormControl, FormGroup, Input, InputLabel, Typography, styled, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
+// styling the UI
 const Container = styled(FormGroup)`
   width:50%;
   margin:5% auto 0 auto;
@@ -11,6 +12,7 @@ const Container = styled(FormGroup)`
   }
 `;
 
+// default value
 const defaultValue = {
   name: '',
   username: '',
@@ -21,10 +23,13 @@ const defaultValue = {
 const AddUser = () => {
   const [user, setUser] = useState(defaultValue);
   const navigate = useNavigate();
+  
+//   when value is added in an input text box
   const onValueChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   }
 
+//   added the user details
   const addUserDetails = async () => {
     await addUser(user);
     navigate("/all");
