@@ -8,6 +8,7 @@ import bodyParser from 'body-parser';
 // making it a express app
 const app = express();
 
+// env is configured
 dotenv.config();
 
 app.use(bodyParser.json({ extended: true }));
