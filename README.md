@@ -13,6 +13,12 @@ npm install
 * They can delete any information by just clicking a button
 * Anyone can post anything and read any information.
 * Do check in the comments mentioned in every folder and file added.
+* Replace env variables with your database connection link, password and username.
+* To run the application after cloning and installing all packages, do the below step:
+* To run backend and frontend, visit server and client sub-folders respectively run below command
+```
+npm start
+```
 
 It helps any person to have all the CRUD operations.
 
