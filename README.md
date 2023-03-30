@@ -1,5 +1,7 @@
 # CRUD_Application
-A CRUD Application Made with the help of MERN stack with all CRUD operations. The project supports on every platform with windows, mac and linux.
+A CRUD Application Made with the help of MERN stack with all CRUD operations. The project supports on every platform with windows, mac and linux. To see the project, visit the given below link:
+
+https://crud-application-ag.netlify.app/
 
 ## How to work with application:
 * Just clone the application.
